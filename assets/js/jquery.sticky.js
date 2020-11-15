@@ -234,7 +234,12 @@ class Sticky {
      * @param {node} element - Element that will be positioned if it's active
      */
     setPosition(element) {
-        this.css(element, { position: '', width: '', top: '', left: '' });
+        this.css(element, {
+            position: '',
+            width: '',
+            top: '',
+            left: ''
+        });
 
         if ((this.vp.height < element.sticky.rect.height) || !element.sticky.active) {
             return;
@@ -289,17 +294,28 @@ class Sticky {
                     element.classList.add(element.sticky.stickyClass);
                 }
 
-                this.css(element, { top: element.sticky.marginTop + 'px' });
+                this.css(element, {
+                    top: element.sticky.marginTop + 'px'
+                });
             }
         } else {
             if (element.sticky.stickyClass) {
                 element.classList.remove(element.sticky.stickyClass);
             }
 
-            this.css(element, { position: '', width: '', top: '', left: '' });
+            this.css(element, {
+                position: '',
+                width: '',
+                top: '',
+                left: ''
+            });
 
             if (element.sticky.wrap) {
-                this.css(element.parentNode, { display: '', width: '', height: '' });
+                this.css(element.parentNode, {
+                    display: '',
+                    width: '',
+                    height: ''
+                });
             }
         }
     }
@@ -363,7 +379,12 @@ class Sticky {
      * @return {object}
      */
     getRectangle(element) {
-        this.css(element, { position: '', width: '', top: '', left: '' });
+        this.css(element, {
+            position: '',
+            width: '',
+            top: '',
+            left: ''
+        });
 
         const width = Math.max(element.offsetWidth, element.clientWidth, element.scrollWidth);
         const height = Math.max(element.offsetHeight, element.clientHeight, element.scrollHeight);
@@ -377,7 +398,12 @@ class Sticky {
             element = element.offsetParent;
         } while (element);
 
-        return { top, left, width, height };
+        return {
+            top,
+            left,
+            width,
+            height
+        };
     }
 
 
