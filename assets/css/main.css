@@ -1731,6 +1731,10 @@ a.back-to-top:focus {
     transform: translateY(60%);
 }
 
+.slider-pic-y61 {
+    transform: translateY(1%);
+}
+
 .slider-pic-y40 {
     transform: translateY(40%);
 }
