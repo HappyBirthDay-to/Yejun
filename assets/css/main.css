@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #016b81;
+    background: #313f67;
     font-size: 14px;
     font-weight: 400;
     font-family: 'Do Hyeon', sans-serif;
@@ -109,7 +109,7 @@ ol li {
 
 .section-title {
     font-size: 36px;
-    color: #333;
+    color: whitesmoke;
     line-height: 52px;
     padding-bottom: 15px;
     font-weight: 700;
@@ -227,8 +227,8 @@ a.back-to-top i {
     height: 40px;
     line-height: 40px;
     color: #fff;
-    background: #E91E63;
-    border-radius: 2px;
+    /* background: #E91E63; */
+    border-radius: 10px;
     text-align: center;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -940,7 +940,7 @@ a.back-to-top:focus {
 /* Team Item */
 
 #team {
-    background: #f2f2f2;
+    background: #313f67;
 }
 
 .team-item:hover {
@@ -1665,6 +1665,7 @@ a.back-to-top:focus {
 }
 
 .gallery-img {
+    background-color: #313f67;
     border-radius: 0%;
     padding: 10px;
 }
@@ -1753,11 +1754,12 @@ a.back-to-top:focus {
 }
 
 .kopub-b {
-    color: #333;
+    color: whitesmoke;
     font-weight: bold;
 }
 
 .gray-color {
-    color: #333;
+    color: whitesmoke;
+    font-size: 14px;
     font-weight: bold;
 }
