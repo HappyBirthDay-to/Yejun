@@ -549,6 +549,13 @@ mark {
     height: auto
 }
 
+.img-address {
+    margin-bottom: 10px;
+    border: 1px solid whitesmoke;
+    max-width: 100%;
+    height: auto
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
