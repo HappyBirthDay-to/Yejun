@@ -1,8 +1,12 @@
 let ticking = false;
 
 function isElementUnderBottom(elem, triggerDiff) {
-    const { top } = elem.getBoundingClientRect();
-    const { innerHeight } = window;
+    const {
+        top
+    } = elem.getBoundingClientRect();
+    const {
+        innerHeight
+    } = window;
     return top > innerHeight + (triggerDiff || 0);
 }
 
@@ -30,7 +34,10 @@ function handleScroll() {
 
     const changeBgSection = document.querySelector('.background-change-wrap');
     const changeBgImg = document.querySelector('.background-change-wrap > div');
-    const { top: bgTop, height: bgHeight } = changeBgSection.getBoundingClientRect();
+    const {
+        top: bgTop,
+        height: bgHeight
+    } = changeBgSection.getBoundingClientRect();
     if (bgTop < 0) {
         const rate = (-1) * bgTop / 3;
         changeBgImg.style.filter = `grayscale(${rate}%)`;
